@@ -22,6 +22,7 @@
         <item name="colorPrimary">@color/blue_500</item>
         <item name="colorAccent">@color/pink_a200</item>
         <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 
 

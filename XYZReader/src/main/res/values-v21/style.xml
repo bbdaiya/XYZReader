@@ -7,5 +7,13 @@
         <item name="colorPrimary">@color/blue_500</item>
         <item name="colorAccent">@color/pink_a200</item>
         <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+    </style>
+    <style name="Theme.Bacon.Detail" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="colorAccent">@color/pink_a200</item>
     </style>
 </resources>

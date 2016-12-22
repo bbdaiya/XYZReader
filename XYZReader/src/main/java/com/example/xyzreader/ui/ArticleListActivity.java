@@ -45,9 +45,8 @@ public class ArticleListActivity extends ActionBarActivity implements
         setContentView(R.layout.activity_article_list);
         //((CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout)).setTitle("Screen Title");
         //mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar = (Toolbar) findViewById(R.id.app_bar);
-        //setSupportActionBar(toolbar);
-
+//        toolbar = (Toolbar) findViewById(R.id.app_bar);
+//        toolbar.setPadding(0, getStatusBarHeight(), 0, 0);
 
         //final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
@@ -176,5 +175,13 @@ public class ArticleListActivity extends ActionBarActivity implements
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }
+    }
+    public int getStatusBarHeight() {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 }
